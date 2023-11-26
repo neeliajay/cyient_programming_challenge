@@ -2,19 +2,25 @@
 Programming challenges as per Cyient Interview process
 
 1. Implement a Hash Table  -> hash_table_test.c
+
    Problem Statement : implement a hash table data storage. 
+
    Requirements :  The data should be stored using string keys and needs to store string values
                    O(1) run time for value look up
                    Resizing of the hash table when adding/removing key-value pairs to/from the hash table
 
-2. Shared Queue  ->  shared_queue_test.c
+3. Shared Queue  ->  shared_queue_test.c
+
    Problem Statement :  implement a shared queue that is intended to be accessed by multiple readers and a single writer.
+
    Requirements :  The queue receives and releases string objects.
                    create 5 threads that consume the strings from the queue, and a single writer that adds the strings to the queue.
                    The writer should add 5 messages a second, and the messages should be distributed relatively evenly between the consumers
 
-3. Implement Client-Server Data Exchange -> client_test.c , server_test.c
+5. Implement Client-Server Data Exchange -> client_test.c , server_test.c
+
    Problem Statement : Implement a server and a client.
+
    Requirements :  The server shall support responding to a single “ping” message with a “pong” response.
                    The request-response data can be strings.
                    The protocol used can be either Layer 4 (e.g., TCP), but must be connection oriented.
